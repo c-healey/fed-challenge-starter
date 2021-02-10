@@ -14,8 +14,8 @@ export const cardData = [
     time: "",
     distance: "",
     CTA: "/",
-    overlayTxt: "9",
-    overlayTxt1: "workouts",
+    overlayTitle: "9",
+    overlayTxt: "workouts",
   },
   {
     headerImg: "/images/slow-pulls-thumb.jpg",
@@ -32,8 +32,8 @@ export const cardData = [
     time: "",
     distance: "",
     CTA: "/",
-    overlayTxt: "12",
-    overlayTxt1: "workouts",
+    overlayTitle: "12",
+    overlayTxt: "workouts",
   },
   {
     headerImg: "/images/charles-race-thumb.jpg",
@@ -50,8 +50,8 @@ export const cardData = [
     time: "",
     distance: "",
     CTA: "/",
-    overlayTxt: "12",
-    overlayTxt1: "workouts",
+    overlayTitle: "12",
+    overlayTxt: "workouts",
   },
   {
     headerImg: "/images/kafue-river-thumb.jpg",
@@ -68,7 +68,7 @@ export const cardData = [
     time: "30:53",
     distance: "6.248 MF",
     CTA: "/",
-    overlayTxt: "16",
-    overlayTxt1: "workouts",
+    overlayTitle: "16",
+    overlayTxt: "workouts",
   },
 ];

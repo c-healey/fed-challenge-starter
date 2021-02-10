@@ -8,8 +8,8 @@ const Card = (props) => {
     time,
     distance,
     CTA,
+    overlayTitle,
     overlayTxt,
-    overlayTxt1,
   } = props.cardDetail;
 
   const renderTimeandDistance = () => {
@@ -30,11 +30,11 @@ const Card = (props) => {
   const renderOverlayContent = () => {
     if (overlayTxt && overlayTxt.length) {
       return (
-        <div class="overlay-txt d-flex justify-content-center">
-          <div class="d-flex justify-content-center align-items-center flex-column">
-            <div class="txt-bg">{overlayTxt}</div>
-            <h5 class="text-uppercase">{overlayTxt1}</h5>
-            <i class="fas fa-caret-right txt-md"></i>
+        <div className="overlay-txt d-flex justify-content-center">
+          <div className="d-flex justify-content-center align-items-center flex-column">
+            <div className="txt-bg">{overlayTitle}</div>
+            <h5 className="text-uppercase">{overlayTxt}</h5>
+            <i className="fas fa-caret-right txt-md"></i>
           </div>
         </div>
       );
@@ -42,7 +42,7 @@ const Card = (props) => {
     return <div></div>;
   };
   return (
-    <div className="card ifit-shadow ifit-border grow h-100" key={props.index}>
+    <div className="card ifit-shadow ifit-border grow h-100">
       <div className="overlay-parent">
         {renderOverlayContent()}
         <img className="card-img-top" src={headerImg} alt="lake inniscarra" />
@@ -53,7 +53,6 @@ const Card = (props) => {
           <img src={thumbnail} alt="trainer" className="ifit-thumbnail" />
         </h5>
         {renderTimeandDistance()}
-
         <a href={CTA} className="text-uppercase ifit-CTA">
           view details
         </a>
