@@ -50,7 +50,7 @@ const Card = (props) => {
       <div className="card-body">
         <h5 className="card-title d-flex justify-content-between">
           <span>{title}</span>
-          <img src={thumbnail} alt="trainer" className="iFit-thumbnail" />
+          <img src={thumbnail} alt="trainer" className="ifit-thumbnail" />
         </h5>
         {renderTimeandDistance()}
 
